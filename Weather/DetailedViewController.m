@@ -21,14 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor blackColor];
-    
     UILabel *weatherInfo = [[UILabel alloc]initWithFrame:CGRectMake(80, 210, 150, 150)];
     [weatherInfo setBackgroundColor:[UIColor blueColor]];
     weatherInfo.textColor = [UIColor whiteColor];
     [weatherInfo setText:[NSString stringWithFormat:@"Condition:%@ \n Temperature: %i ºc \n Wind: %i km/h \n", self.city.weatherConditionOfCity, self.city.temperatureOfCity, self.city.windSpeed]];
     weatherInfo.numberOfLines = 0;
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.city.image];
+    imageView.frame = CGRectMake(60, 150, 50, 50);
+    [[self view] addSubview:imageView];
     [[self view] addSubview:weatherInfo];
 }
 

@@ -17,11 +17,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    City *vancouverBc = [[City alloc] initWithName:@"Vancouver" weatherConditionOfCity:@"rainy" temperatureOfCity:15 windSpeed:20];
-    City *sanFranciscoCa = [[City alloc] initWithName:@"San Francisco" weatherConditionOfCity:@"windy" temperatureOfCity:12 windSpeed:180];
-    City *torontoOn = [[City alloc] initWithName:@"Toronto" weatherConditionOfCity:@"sleeting" temperatureOfCity:1 windSpeed:75];
-    City *calgaryAb = [[City alloc] initWithName:@"Calgary" weatherConditionOfCity:@"snowing" temperatureOfCity:0 windSpeed:55];
-    City *newYorkNy = [[City alloc] initWithName:@"New York" weatherConditionOfCity:@"foggy" temperatureOfCity:9 windSpeed:25];
+    City *vancouverBc = [[City alloc] initWithName:@"Vancouver" weatherConditionOfCity:@"rainy" temperatureOfCity:15 windSpeed:20  image:[UIImage imageNamed:@"rain"]];
+    City *sanFranciscoCa = [[City alloc] initWithName:@"San Francisco" weatherConditionOfCity:@"windy" temperatureOfCity:12 windSpeed:180 image:[UIImage imageNamed:@"wind"]];
+    City *torontoOn = [[City alloc] initWithName:@"Toronto" weatherConditionOfCity:@"sleeting" temperatureOfCity:1 windSpeed:75 image:[UIImage imageNamed:@"sleet"]];
+    City *calgaryAb = [[City alloc] initWithName:@"Calgary" weatherConditionOfCity:@"snowing" temperatureOfCity:0 windSpeed:55 image:[UIImage imageNamed:@"snow"]];
+    City *newYorkNy = [[City alloc] initWithName:@"New York" weatherConditionOfCity:@"foggy" temperatureOfCity:9 windSpeed:25 image:[UIImage imageNamed:@"fog"]];
     
     // Don't forget to assign the window a rootViewController
     UINavigationController *vancouverNavCon = [self navigationControllerForCity:vancouverBc];

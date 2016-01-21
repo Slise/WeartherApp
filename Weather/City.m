@@ -10,13 +10,14 @@
 
 @implementation City
 
--(instancetype)initWithName: (NSString *) name weatherConditionOfCity: (NSString *) weatherConditionOfCity temperatureOfCity: (int) temperatureOfCity windSpeed: (int) windSpeed{
+-(instancetype)initWithName: (NSString *) name weatherConditionOfCity: (NSString *) weatherConditionOfCity temperatureOfCity: (int) temperatureOfCity windSpeed: (int) windSpeed image:(UIImage *) image {
     self = [super init];
     if (self) {
         _name = name;
         _weatherConditionOfCity = weatherConditionOfCity;
         _temperatureOfCity = temperatureOfCity;
         _windSpeed = windSpeed;
+        _image = image;
     }
     return self;
     

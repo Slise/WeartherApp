@@ -14,8 +14,9 @@
 @property (nonatomic, strong) NSString *weatherConditionOfCity;
 @property (nonatomic, assign) int temperatureOfCity;
 @property (nonatomic, assign) int windSpeed;
+@property (nonatomic, strong) UIImage *image;
 
--(instancetype)initWithName: (NSString *) name weatherConditionOfCity: (NSString *) weatherConditionOfCity temperatureOfCity: (int) temperatureOfCity windSpeed: (int) windSpeed;
+-(instancetype)initWithName: (NSString *) name weatherConditionOfCity: (NSString *) weatherConditionOfCity temperatureOfCity: (int) temperatureOfCity windSpeed: (int) windSpeed image:(UIImage *) image;
 
 
 @end
